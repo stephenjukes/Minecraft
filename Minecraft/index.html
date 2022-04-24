@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minecraft</title>
+        <link rel="stylesheet" href="minecraft.css">
+        <script src="https://kit.fontawesome.com/b4c1d9b972.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <audio></audio>
+
+            <div id="help" class="modal hide">
+                <h1>Help</h1>
+                <p>i - inventory</p>
+            </div>
+
+            <div id="inventory" class="modal hideable hide">
+
+            <!-- inventory-top -->
+                <section id="inventory-top" class="tile-section hideable hide">
+                    <div id="armour">
+                        <!-- consider populating in js -->
+                        <div id="helmet" class="tile" data-type="none"></div>
+                        <div id="breastplate" class="tile" data-type="none"></div>
+                        <div id="trousers" class="tile" data-type="none"></div>
+                        <div id="boots" class="tile" data-type="none"></div>
+                    </div>
+                    <div id="avatar"></div>
+                    <div id="shield">
+                        <div class="tile" data-type="none"></div>
+                    </div>
+                    <div id="inventory-craft" class="crafting">
+                        <div id="inventory-craft-input" class="crafting-input"></div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <div class="tile crafting-output" data-type="none"></div>
+                    </div>
+                </section>
+
+            <!-- crafting-table -->
+                <section id="craft-table" class="tile-section hideable hide">
+                    <div id="craft-table-crafting">
+                        <div id="craft-table-input"></div>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <div class="tile" data-type="none"></div>
+                    </div>
+                </section>
+
+            <!-- generic-inventory -->
+                <section id="inventory-hidden" class="tile-section"></section>
+                <section id="inventory-available-items" class="tile-section"></section> 
+            </div>
+
+            <section id="available-items" class="tile-section"></section>
+
+            <div id="steve"></div>
+
+        </div>
+
+          <script src="js/main.js"></script>
+    </body>
+</html>
