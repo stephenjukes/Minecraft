@@ -39,20 +39,22 @@
             <!-- crafting-table -->
                 <section id="craft-table" class="tile-section hideable hide">
                     <div id="craft-table-crafting">
-                        <div id="craft-table-input"></div>
+                        <div id="craft-table-input" class="crafting-input"></div>
                         <i class="fa-solid fa-arrow-right-long"></i>
-                        <div class="tile" data-type="none"></div>
+                        <div class="tile crafting-output" data-type="none"></div>
                     </div>
                 </section>
 
             <!-- generic-inventory -->
-                <section id="inventory-hidden" class="tile-section"></section>
-                <section id="inventory-available-items" class="tile-section"></section> 
+                <section id="inventory-hidden" class="storage tile-section"></section>
+                <section id="inventory-available-items" class="storage available-items tile-section"></section> 
             </div>
 
-            <section id="available-items" class="tile-section"></section>
+            <section id="main-available-items" class="storage available-items tile-section"></section>
 
-            <div id="steve"></div>
+            <div id="steve">
+                <div id="active-tool" class="item"></div>
+            </div>
 
         </div>
 

@@ -69,6 +69,10 @@ h1 {
     background-size: 400px 400px;
 }
 
+#active-tool {
+    background-color: gray;
+}
+
 .tree { 
     position: absolute;
     background-color: green;
@@ -190,7 +194,7 @@ i {
 }
 
 /* available items */
-#available-items {
+#main-available-items {
     display: flex;
     position: fixed;
     bottom: 1rem;
@@ -200,7 +204,7 @@ i {
     z-index: var(--max-z-index);
 }
 
-#available-items .tile {
+#main-available-items .tile {
     opacity: 0.8;
 }
 
